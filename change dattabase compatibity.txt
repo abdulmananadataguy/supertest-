@@ -1,0 +1,9 @@
+use AdventureWorks2019;
+Go
+select compatibility_level
+from sys.databases where name = 'AdventureWorks2019';
+Go
+
+alter database	AdventureWorks2019
+set compatibility_level=160;
+go
